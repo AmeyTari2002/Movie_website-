@@ -33,7 +33,7 @@ const Home = () => {
 
 
     return (
-        <div className='bg-gradient-to-b from-black to-gray-700 min-w-full h-full'>
+        <div className='bg-gradient-to-b from-black to-gray-800 min-w-full h-full'>
 
 
             <div className='max-w-screen-lg md:px-4 p-4 mx-auto  md:text-xl    pt-12 justify-center items-center text-white grid  grid-cols-2 
