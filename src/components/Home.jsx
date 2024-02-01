@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
     const [data, setData] = useState('');
-    
+
 
     useEffect(() => {
         axios.get('https://api.tvmaze.com/search/shows?q=all')
@@ -43,23 +43,25 @@ const Home = () => {
                         // <p key={index}>{item.score}</p>
                         <div key={index}  >
 
-                                    <div className='  text-white' >
-                                        <img src={item?.show?.image?.original || 'https://static.tvmaze.com/uploads/images/medium_portrait/477/1193524.jpg'} alt="" />
-                                        <p className='text-xl '>{item.show.name}</p>
-                                        <div className='lg:flex justify-between pt-2 '>
-                                            <div className='flex flex-col items-start text-md text-gray-300'>
-                                                <p className='text-sm'>Type: {item.show.type}</p>
-                                                <p className='text-sm'>Genres: {item.show.genres[0]}</p>
-                                            </div>
-                                            <div className='pt-2 flex items-start'>
-                                                < Link to={'/'+ item.show.id}  className=' text-sm md:text-lg bg-gradient-to-r text-black from-blue-600 to-blue-200 rounded-lg px-2 py-1'>
-                                                    More Info
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </div>  
-                                
-                            
+                            <div className='  text-white' >
+                                <Link to={'/' + item.show.id}  >
+                                    <img src={item?.show?.image?.original || 'https://static.tvmaze.com/uploads/images/medium_portrait/477/1193524.jpg'} alt="" />
+                                </Link>
+                                <p className='text-xl '>{item.show.name}</p>
+                                <div className='lg:flex justify-between pt-2 '>
+                                    <div className='flex flex-col items-start text-md text-gray-300'>
+                                        <p className='text-sm'>Type: {item.show.type}</p>
+                                        <p className='text-sm'>Genres: {item.show.genres[0]}</p>
+                                    </div>
+                                    <div className='pt-2 flex items-start'>
+                                        < Link to={'/' + item.show.id} className=' text-sm md:text-lg bg-gradient-to-r text-black from-blue-600 to-blue-200 rounded-lg px-2 py-1'>
+                                            More Info
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
                     ))
                 }
