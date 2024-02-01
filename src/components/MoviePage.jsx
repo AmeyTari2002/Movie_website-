@@ -51,7 +51,7 @@ const MoviePage = () => {
                                             <p className='text-justify  text-gray-400'>{item.show.summary}</p>
                                         </div>
                                         <div className='mt-8'>
-                                            <Link to={'/'} className=' bg-gradient-to-b from-blue-900 to-blue-500 px-40 py-2'>
+                                            <Link to={'/'} className=' bg-gradient-to-b from-blue-900 to-blue-500 md:px-40 px-24 py-2'>
                                                 Book
                                             </Link>
                                         </div>
