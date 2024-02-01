@@ -11,6 +11,5 @@ Currently, two official plugins are available:
 <h1>Email: tariamey-inft@atharvacoe.ac.in </h1>
 <h1>contact: 8104827217 </h1>
 
-<h1>Demo Images</h1>
-<img src='![Alt text](image.png)'>
+
 
