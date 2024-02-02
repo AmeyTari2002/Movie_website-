@@ -69,7 +69,7 @@ const MoviePage = () => {
                                                             </div>
                                                             <div className='my-7'>
                                                                 < Link to={'/'} className=' text-sm md:text-lg  text-white bg-gradient-to-b from-blue-950 to-blue-500 rounded-lg px-8 py-2'>
-                                                                    More Info
+                                                                    Book
                                                                 </Link>
                                                             </div>
                                                         </div>
