@@ -46,7 +46,7 @@ const MoviePage = () => {
                                                                 setdisplayform(!displayform)
                                                             }}><ImCross />
                                                             </button>
-                                                            <div className='flex flex-col px-6 md:mx-12'>
+                                                            <div className='flex flex-col px-3 md:mx-12'>
                                                                 <form className='mt-5 flex flex-col' >
                                                                     <div className='flex justify-center items-center'>
                                                                         <label htmlFor="names">Name:</label>
