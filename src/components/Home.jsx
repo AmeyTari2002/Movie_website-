@@ -15,21 +15,9 @@ const Home = () => {
             .catch(error => {
                 console.error('Error fetching data:', error);
             });
-    }, []); // Empty dependency array ensures useEffect runs once on component mount
+    }, []); 
 
-    {/* <div className=' '>
-                    {
-                        skills.map(({ id, src, title, style }) => (
-                            <div key={id} className={`shadow-md  hover:scale-110 duration-500 
-                            py-2 rounded-lgg ${style}` }>
-                                <img src={src} alt="" className='w-20 mx-auto' />
-                                <p className='mt-4'>{title}</p>
-                            </div>
-                        ))
-                    }
-
-
-                </div> */}
+    
 
 
     return (
